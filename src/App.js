@@ -7,6 +7,7 @@ import { LoadMore } from "components/load-more/LoadMore";
 import { Like } from "components/like/Like";
 import { DynamicRouting } from "components/dynamic-routing/DynamicRouting";
 import RoutingDetail from "components/dynamic-routing/RoutingDetail";
+import { AxiosLogin } from "components/axios-login/AxiosLogin";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
 
         <Route path="/dynamic-routing" element={<DynamicRouting />} />
         <Route path="/dynamic-routing/:itemId" element={<RoutingDetail />} />
+
+        <Route path="/axios-login" element={<AxiosLogin />} />
       </Routes>
 
     </div>

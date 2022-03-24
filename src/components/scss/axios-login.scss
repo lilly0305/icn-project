@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.axiosLoginWrap {
+
+  .axiosLogin {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-grow: 1;
+      padding-bottom: 1rem;
+
+      input[type="text"],
+      input[type="password"],
+      button,
+      textarea {
+        font-size: 16px;
+        padding: 0.5rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.3s;
+
+        &:focus {
+          border: 2px solid thistle;
+        }
+      }
+
+      label,
+      button {
+        color: #333;
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+      }
+
+      button {
+        padding: 0.5rem;
+
+        &:enabled{
+          background-color: thistle;
+          color: white;
+        }
+      }
+
+      .instructions {
+        font-size: 14px;
+        border-radius: 0.5rem;
+        background: thistle;
+        color: #fff;
+        padding: 1rem 0.5rem;
+        position: relative;
+        bottom: -10px;
+      }
+
+      .instructions>svg {
+        margin-right: 0.25rem;
+        color: #fff;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      .offscreen {
+        position: absolute;
+        left: -9999px;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .valid {
+        color: #019267;
+        margin-left: 0.25rem;
+        path {
+          fill: #019267;
+        }
+      }
+
+      .invalid {
+        color: #DD4A48;
+        margin-left: 0.25rem;
+
+        path {
+          fill: #DD4A48;
+        }
+      }
+
+      .errmsg {
+        background-color: lightpink;
+        color: #DD4A48;
+        font-weight: bold;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .line {
+        display: inline-block;
+      }
+    }
+  }
+}
