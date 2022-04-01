@@ -4,9 +4,6 @@ import ItemList from './ItemList';
 export const ListKey = ({items, handleCheck, handleDelete}) => {
 
   return (
-    <div className='listKey'>
-      <h1>List와 key</h1>
-  
       <div className='list'>
         {items.length ? (
           <ItemList 
@@ -18,6 +15,5 @@ export const ListKey = ({items, handleCheck, handleDelete}) => {
           <p style={{marginTop: '2rem'}}>Your list is empty!</p>
         )}
       </div>
-    </div>
   )
 }

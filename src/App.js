@@ -8,9 +8,10 @@ import { Like } from "components/like/Like";
 import { DynamicRouting } from "components/dynamic-routing/DynamicRouting";
 import RoutingDetail from "components/dynamic-routing/RoutingDetail";
 import Random from "components/random/Random";
-import { ListKey } from "components/list-key/ListKey";
 import { AxiosLogin } from "components/axios-login/AxiosLogin";
-import { GroceryList } from "components/list-key/GroceryList";
+import { GroceryList } from "components/input-list/GroceryList";
+
+import 'components/scss/common.scss';
 
 function App() {
   return (

@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -32,8 +32,8 @@ a{
     border-radius: 10px;
     margin-right: 1rem;
     padding: 1rem;
-  
-    &:hover{
+
+    &:hover {
       background-color: #ddd;
     }
   }
@@ -48,11 +48,33 @@ a{
 
 h1 {
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+/* IE의 경우 */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
 }
 
 // 
-.button{
+.button {
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 14px;

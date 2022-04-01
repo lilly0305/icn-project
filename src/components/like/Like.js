@@ -1,7 +1,6 @@
 import COLORS from './COLORS.json';
 import 'components/scss/like.scss';
-import { useEffect, useState } from 'react';
-import { LikeButton } from './LikeButton';
+import { useState } from 'react';
 
 export const Like =() => {
   const [items, setItems] = useState(COLORS);
