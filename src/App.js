@@ -12,6 +12,7 @@ import { AxiosLogin } from "components/axios-login/AxiosLogin";
 import { GroceryList } from "components/input-list/GroceryList";
 
 import 'components/scss/common.scss';
+import CssColorTemplate from "components/input-list/css-colors/CssColorTemplate";
 
 function App() {
   return (
@@ -26,10 +27,11 @@ function App() {
 
         <Route path="/dynamic-routing" element={<DynamicRouting />} />
         <Route path="/dynamic-routing/:itemId" element={<RoutingDetail />} />
+        <Route path="/axios-login" element={<AxiosLogin />} />
 
         <Route path="/random" element={<Random />} />
         <Route path="/list-input" element={<GroceryList />} />
-        <Route path="/axios-login" element={<AxiosLogin />} />
+        <Route path="/css-colors" element={<CssColorTemplate />} />
       </Routes>
 
     </div>
