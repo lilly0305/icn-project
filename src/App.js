@@ -9,6 +9,7 @@ import { DynamicRouting } from "components/dynamic-routing/DynamicRouting";
 import RoutingDetail from "components/dynamic-routing/RoutingDetail";
 import Random from "components/random/Random";
 import { ListKey } from "components/list-key/ListKey";
+import { AxiosLogin } from "components/axios-login/AxiosLogin";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         <Route path="/random" element={<Random />} />
         <Route path="/list-key" element={<ListKey />} />
+        <Route path="/axios-login" element={<AxiosLogin />} />
       </Routes>
 
     </div>

@@ -11,6 +11,7 @@ export const Main = () => {
         <Link to="/dynamic-routing">다이나믹 라우팅</Link>
         <Link to="/random">랜덤</Link>
         <Link to="/list-key">리스트와 키</Link>
+        <Link to="/axios-login">로그인 유효성 검사</Link>
       </div>
     </div>
   )
