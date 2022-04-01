@@ -1,0 +1,37 @@
+.listKey {
+  .groceryList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+      li {
+        margin-bottom: 1rem;
+
+        input[type="checkbox"] {
+          margin-right: 0.5rem;
+
+          &:focus+label {
+            text-decoration: underline;
+          }
+        }
+
+        svg {
+          cursor: pointer;
+
+          path {
+            fill: #ddd;
+
+            &:hover,
+            &:focus {
+              fill: thistle;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

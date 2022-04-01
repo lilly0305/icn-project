@@ -9,6 +9,8 @@ export const Main = () => {
         <Link to="/load-more">더보기</Link>
         <Link to="/like">찜하기</Link>
         <Link to="/dynamic-routing">다이나믹 라우팅</Link>
+        <Link to="/random">랜덤</Link>
+        <Link to="/list-key">리스트와 키</Link>
       </div>
     </div>
   )

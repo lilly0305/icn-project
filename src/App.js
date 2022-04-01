@@ -7,6 +7,8 @@ import { LoadMore } from "components/load-more/LoadMore";
 import { Like } from "components/like/Like";
 import { DynamicRouting } from "components/dynamic-routing/DynamicRouting";
 import RoutingDetail from "components/dynamic-routing/RoutingDetail";
+import Random from "components/random/Random";
+import { ListKey } from "components/list-key/ListKey";
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
 
         <Route path="/dynamic-routing" element={<DynamicRouting />} />
         <Route path="/dynamic-routing/:itemId" element={<RoutingDetail />} />
+
+        <Route path="/random" element={<Random />} />
+        <Route path="/list-key" element={<ListKey />} />
       </Routes>
 
     </div>

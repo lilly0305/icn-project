@@ -14,7 +14,7 @@ export const Like =() => {
   return(
     <div className="like">
       <h1>찜하기</h1>
-
+      
       <div className="likeList">
         {
           items.slice(0, 9).map((item, index) => {
