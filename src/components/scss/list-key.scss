@@ -1,37 +1,77 @@
-.listKey {
-  .groceryList {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.groceryList {
+  .listKey {
+    .list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 60vh;
 
-    ul {
-      li {
-        margin-bottom: 1rem;
+      ul {
 
-        input[type="checkbox"] {
-          margin-right: 0.5rem;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1rem;
 
-          &:focus+label {
-            text-decoration: underline;
-          }
-        }
+          .inputLabel {
+            display: flex;
+            align-items: center;
 
-        svg {
-          cursor: pointer;
+            input[type="checkbox"] {
+              margin-right: 0.5rem;
 
-          path {
-            fill: #ddd;
+              &:focus+label {
+                text-decoration: underline;
+              }
+            }
 
-            &:hover,
-            &:focus {
-              fill: thistle;
+            label {
+              max-width: 30rem;
             }
           }
 
+          svg {
+            margin-left: 1rem;
+            cursor: pointer;
+            outline: none;
+
+            path {
+              fill: #ddd;
+
+              &:hover,
+              &:focus {
+                fill: thistle;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+
+  .groceryFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: thistle;
+
+    p {
+      color: white;
+
+      &:last-child {
+        color: black;
+
+        strong {
+          font-size: 2rem;
         }
       }
     }
   }
-
 }
