@@ -1,7 +1,6 @@
 import 'components/scss/google-editor.scss';
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Expressions } from './contents/Expressions';
 import { Insight } from './contents/Insight';
 import { VideoClip } from './contents/VideoClip';
@@ -45,10 +44,10 @@ export const GoogleDocs = () => {
 
         <div className='editorWrap'>
           <div className='editorTab'>
-            <a href="https://docs.google.com/document/u/1/d/1lOvGxG2LOKKP4u-sMGR3_Nj1FIQSdMkKXk9GmzFBShg/edit?rm=embedded" target="_blank" className='button'>새 창</a>
+            <a rel="noreferrer" href="https://docs.google.com/document/u/1/d/1lOvGxG2LOKKP4u-sMGR3_Nj1FIQSdMkKXk9GmzFBShg/edit?rm=embedded" target="_blank" className='button'>새 창</a>
           </div>
           <div className='editorIn'>
-            <iframe src="https://docs.google.com/document/u/1/d/1lOvGxG2LOKKP4u-sMGR3_Nj1FIQSdMkKXk9GmzFBShg/edit?rm=embedded" data-gtm-yt-inspected-1_19="true"></iframe>
+            <iframe rel="noreferrer" src="https://docs.google.com/document/u/1/d/1lOvGxG2LOKKP4u-sMGR3_Nj1FIQSdMkKXk9GmzFBShg/edit?rm=embedded" data-gtm-yt-inspected-1_19="true"></iframe>
           </div>
         </div>
       </div>

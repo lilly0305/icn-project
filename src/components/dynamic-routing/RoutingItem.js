@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import COLORS from '../like/COLORS.json';
 import 'components/scss/dynamic-routing.scss';
 import { Link } from 'react-router-dom';

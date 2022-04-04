@@ -7,7 +7,7 @@ import SearchItem from './SearchItem';
 
 export const GroceryList =() => {
   const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
-
+  
   const setAndSaveItems = (newItems) => {
     setItems(newItems);
     localStorage.setItem('shoppinglist', JSON.stringify(newItems));
@@ -29,7 +29,7 @@ export const GroceryList =() => {
 
     setAndSaveItems(listItems);
   }
-
+  console.log(items);
   const handleDelete = (id) => {
     const listItems = items.filter((item) => item.id !== id);
 
