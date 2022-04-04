@@ -28,13 +28,13 @@ a {
   flex-wrap: wrap;
   margin: 2rem;
   border: 1px solid #eee;
-  padding: 1rem;
+  padding: 2rem;
+  gap: 1rem;
 
   a {
     display: inline-block;
     background-color: #eee;
     border-radius: 10px;
-    margin-right: 1rem;
     padding: 1rem;
 
     &:hover {

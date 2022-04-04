@@ -1,13 +1,14 @@
 import COLORS from './COLORS.json';
 import 'components/scss/like.scss';
 import { useState } from 'react';
+import { LikeButton } from './LikeButton';
 
 export const Like =() => {
   const [items, setItems] = useState(COLORS);
-  const [heart, setHeart] = useState(false);
 
-  const handleHeartClick = () => {
-    setHeart(!heart);
+  const handleHeart = (id) => {
+    const newItems = items.map((item) => item.id === id ? {...item, isLike: !item.isLike} : item);
+    setItems(newItems);
   }
 
   return(
@@ -16,7 +17,7 @@ export const Like =() => {
       
       <div className="likeList">
         {
-          items.slice(0, 9).map((item, index) => {
+          items.slice(0, 9).map((item) => {
             return(
               <article key={item.id}>
                 {item.id}
@@ -25,8 +26,7 @@ export const Like =() => {
                 </figure>
                 <h2>
                   <span>{item.title}</span>
-                  {/* <LikeButton buttonId={item.id} onClick={handleHeartClick} selected={heart}/> */}
-                  <span className={item.isLike ? "material-icons active" : "material-icons"} onClick={handleHeartClick}>favorite</span>
+                  <LikeButton id={item.id} isLike={item.isLike} onClick={handleHeart} />
                 </h2>
                 <p>{item.content}</p>
               </article>

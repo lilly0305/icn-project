@@ -1,5 +1,6 @@
-// export const LikeButton =({buttonId, selected, onClick}) => {
-//   return(
-//     <span className={selected ? "material-icons active" : "material-icons"} onClick={onClick(buttonId)}>favorite</span>
-//   )
-// }
+export const LikeButton =({id, onClick, isLike}) => {
+  
+  return(
+    <span className={isLike ? "material-icons active" : "material-icons"} onClick={() => onClick(id)}>favorite</span>
+  )
+}

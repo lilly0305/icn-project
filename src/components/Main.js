@@ -15,6 +15,8 @@ export const Main = () => {
         <Link to="/random">랜덤</Link>
         <Link to="/list-input">리스트와 키</Link>
         <Link to="/css-colors">컬러 팔레트</Link>
+
+        <Link to="/react-modal">react modal을 이용한 모달 관리</Link>
       </div>
     </div>
   )

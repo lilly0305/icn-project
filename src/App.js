@@ -14,6 +14,7 @@ import { GroceryList } from "components/input-list/GroceryList";
 import 'components/scss/common.scss';
 import CssColorTemplate from "components/input-list/css-colors/CssColorTemplate";
 import ReactHookForm from "components/react-hook-form/ReactHookForm";
+import ReactModal from "components/react-modal/ReactModal";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Route path="/random" element={<Random />} />
         <Route path="/list-input" element={<GroceryList />} />
         <Route path="/css-colors" element={<CssColorTemplate />} />
+
+        <Route path="/react-modal" element={<ReactModal />} />
 
       </Routes>
 
