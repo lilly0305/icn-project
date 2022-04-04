@@ -10,6 +10,7 @@ export const Main = () => {
         <Link to="/like">찜하기</Link>
         <Link to="/dynamic-routing">다이나믹 라우팅</Link>
         <Link to="/axios-login">로그인 유효성 검사</Link>
+        <Link to="/hook-form">hook-form을 이용한 로그인 유효성 검사</Link>
 
         <Link to="/random">랜덤</Link>
         <Link to="/list-input">리스트와 키</Link>
